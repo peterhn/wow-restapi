@@ -9,7 +9,7 @@ var wowRepository = require('./wowRepository');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
-var port = process.env.port || 5000;
+var port = process.env.PORT || 5000;
 
 //ROUTES FOR OUR API
 // =======================================================

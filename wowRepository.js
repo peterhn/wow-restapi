@@ -123,6 +123,16 @@ exports.getCharacters = function(req, res){
   });
 };
 
+exports.deleteAccount = function(req, res){
+  Account.remove({account_name : req.params.account_name}, function(err){
+    if(err){
+      res.send(err);
+    } else {
+      res.send({'success' : 'account deleted'});
+    }
+  });
+};
+
 exports.deleteCharacter = function(req, res){
   Account.findOne({account_name : req.params.account_name, 'characters.name' : req.params.character_name }).select('characters.$').exec(function(err, account){
     if(err) return next(err);
