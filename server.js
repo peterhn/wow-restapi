@@ -62,6 +62,8 @@ router.delete('/account/:account_name/characters/:character_name', function(req,
 //all routes will be prefixed with api
 
 app.use('/api', router);
-
+app.get('/', function(req, res){
+  res.send('welcome to wow rest api');
+});
 app.listen(port);
 console.log('magic happens on port '  + port);
