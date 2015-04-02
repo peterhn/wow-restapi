@@ -19,6 +19,7 @@ This api follows the following rules:
 •         A player should be able to delete and undelete characters.
 
 The api has the following endpoints:
+--
 
 GET /about
 
