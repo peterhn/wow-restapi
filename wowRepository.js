@@ -10,7 +10,7 @@ var AccountRules = require('./app/rules/accountRules');
 
 exports.createNewAccount = function(req, res){
   var account = new Account();
-  var accountLink = 'http://' + req.headers.host + '/api' + url.parse(req.url).pathname + '/' + req.body.name;
+  var accountLink = 'http://' + req.headers.host + '/api/account/' + req.body.name;
   account.account_name = req.body.name;
   account.link = accountLink;
 
