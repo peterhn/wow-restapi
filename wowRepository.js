@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var url = require('url');
 
-mongoose.connect('mongodb://admin:161446pn@ds061248.mongolab.com:61248/heroku_app35308126');
+mongoose.connect('mongodb://public:public@ds059661.mongolab.com:59661/heroku_app35475610');
 
 var Account = require('./app/models/account');
 var Character = require('./app/models/character');
